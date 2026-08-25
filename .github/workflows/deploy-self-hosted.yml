@@ -1,0 +1,31 @@
+name: Deploy to Self-Hosted
+
+# push-only: this repo is PUBLIC and runs on a self-hosted runner, so we must
+# never trigger on pull_request (a fork PR could otherwise run code on the
+# server). Pushing to main requires write access to the repo.
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+# Never let two deploys write to /srv/appliedoptics/site at once.
+concurrency:
+  group: deploy-appliedoptics
+  cancel-in-progress: false
+
+jobs:
+  build-deploy:
+    runs-on: [self-hosted, ee-infra]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Build site
+        run: |
+          chmod +x ./build.sh
+          ./build.sh --baseurl /AppliedOptics --url https://ee.iitm.ac.in
+
+      - name: Deploy to web directory
+        run: |
+          test -f _site/index.html || { echo "build produced no index.html"; exit 1; }
+          rsync -a --delete _site/ /srv/appliedoptics/site/
