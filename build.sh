@@ -7,12 +7,18 @@
 # config on top. Jekyll 3.x only takes --baseurl on the CLI -- `url` has to
 # come from a config file -- hence the overlay rather than plain flags.
 #
-# Usage: ./build.sh [--baseurl /AppliedOptics] [--url https://ee.iitm.ac.in]
+# Usage:
+#   ./build.sh                 build the site into _site
+#   ./build.sh --serve         preview at http://localhost:4000/AppliedOptics/
+#
+# Options: [--baseurl /AppliedOptics] [--url https://ee.iitm.ac.in] [--port N]
 set -euo pipefail
 
 BASEURL="${BASEURL:-/AppliedOptics}"
 SITE_URL="${SITE_URL:-https://ee.iitm.ac.in}"
 RUBY_IMAGE="${RUBY_IMAGE:-ruby:3.3}"
+MODE=build
+PORT=4000
 # Gem cache lives OUTSIDE the source tree: Jekyll 3.x tries to parse gem files
 # as site content if they sit under the source directory.
 BUNDLE_CACHE="${BUNDLE_CACHE:-/srv/appliedoptics/bundle-cache}"
@@ -21,6 +27,8 @@ while [[ $# -gt 0 ]]; do
   case "$1" in
     --baseurl) BASEURL="$2"; shift 2 ;;
     --url)     SITE_URL="$2"; shift 2 ;;
+    --serve|serve) MODE=serve; shift ;;
+    --port)    PORT="$2"; shift 2 ;;
     *) echo "Unknown option: $1" >&2; exit 2 ;;
   esac
 done
@@ -42,17 +50,25 @@ exclude:
 YAML
 trap 'rm -f _config.deploy.yml' EXIT
 
-echo "[build] baseurl=$BASEURL url=$SITE_URL"
-docker run --rm \
-  -u "$(id -u):$(id -g)" \
-  -e HOME=/tmp \
-  -e BUNDLE_PATH=/bundle \
-  -e BUNDLE_JOBS=4 \
-  -e BUNDLE_RETRY=3 \
-  -v "$PWD":/srv/jekyll \
-  -v "$BUNDLE_CACHE":/bundle \
-  -w /srv/jekyll \
-  "$RUBY_IMAGE" \
-  /bin/bash -c "bundle install && bundle exec jekyll build --config _config.yml,_config.deploy.yml"
+common=(
+  --rm
+  -u "$(id -u):$(id -g)"
+  -e HOME=/tmp
+  -e BUNDLE_PATH=/bundle
+  -e BUNDLE_JOBS=4
+  -e BUNDLE_RETRY=3
+  -v "$PWD":/srv/jekyll
+  -v "$BUNDLE_CACHE":/bundle
+  -w /srv/jekyll
+)
 
-echo "[build] done -> _site"
+if [[ "$MODE" == "serve" ]]; then
+  echo "[serve] starting preview on http://localhost:$PORT$BASEURL/  (Ctrl-C to stop)"
+  docker run -it "${common[@]}" -p "$PORT:$PORT" "$RUBY_IMAGE" \
+    /bin/bash -c "bundle install && bundle exec jekyll serve --config _config.yml,_config.deploy.yml --host 0.0.0.0 --port $PORT --watch --force_polling"
+else
+  echo "[build] baseurl=$BASEURL url=$SITE_URL"
+  docker run "${common[@]}" "$RUBY_IMAGE" \
+    /bin/bash -c "bundle install && bundle exec jekyll build --config _config.yml,_config.deploy.yml"
+  echo "[build] done -> _site"
+fi

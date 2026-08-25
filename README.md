@@ -16,8 +16,25 @@ git commit -m "describe what you changed"
 git push
 ```
 
-Wait about a minute, then reload the site. If it looks unchanged, hard-reload
+Wait about a minute, then reload the live site. If it looks unchanged, hard-reload
 the page (Ctrl-Shift-R, or Cmd-Shift-R on a Mac) to get past your browser cache.
+
+## Previewing your changes first
+
+You can see the site on your own machine before pushing anything. This needs
+[Docker](https://docs.docker.com/get-docker/) installed -- nothing else, and in
+particular no Ruby.
+
+```bash
+./build.sh --serve
+```
+
+Then open <http://localhost:4000/AppliedOptics/>. Leave it running while you
+work: edit a file, save, and refresh the browser to see the change. Press
+Ctrl-C to stop.
+
+The first run takes a few minutes while it downloads the build tools. After
+that it starts in seconds.
 
 ## What to edit
 
@@ -27,8 +44,8 @@ the page (Ctrl-Shift-R, or Cmd-Shift-R on a Mac) to get past your browser cache.
 | Photos and images | `assets/img/` |
 | Menu, header, footer | `_includes/` |
 
-Never edit `_site/` -- it is generated, and your changes there will be
-overwritten on the next push.
+Never edit `_site/`. It is the generated output, it is not part of the
+repository, and it is rebuilt from scratch on every push.
 
 When linking to a page or image, use `relative_url` so the path works both
 locally and on the live site:
@@ -56,5 +73,5 @@ Add files with those names to `assets/img/` and they will appear.
 
 ## Help
 
-Ask Nitin Chandrachoodan if anything here is unclear or the site does not
-update.
+Ask Nitin Chandrachoodan <nitin@ee.iitm.ac.in> if anything here is unclear or
+the site does not update.
