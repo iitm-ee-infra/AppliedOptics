@@ -143,6 +143,6 @@ layout: single
     <p class="typo-text">
       Corrections to typos in the book: “Introduction to Ray, Wave, and Beam Optics with Applications,” IOP Publ., November 2024. (ISBN 0750354984, 978075035498)
     </p>
-    <a href="https://docs.google.com/document/d/14KOftcBTeISPT5WHueYEvmjChvsAqKXqi4Z-OINyoco/edit?tab=t.0" class="typo-btn" target="_blank" rel="noopener noreferrer">Report Typo</a>
+    <a href="https://docs.google.com/document/d/14KOftcBTeISPT5WHueYEvmjChvsAqKXqi4Z-OINyoco/edit?tab=t.0" class="typo-btn" target="_blank" rel="noopener noreferrer">corrections</a>
   </div>
 </div>
