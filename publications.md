@@ -10,14 +10,7 @@ title: "Publications & Research"
   </h1>
   <hr style="border-top: 2px solid #1a365d; margin: 15px auto 0 auto; width: 50%;">
 
-  <!-- NEW: YouTube Course Playlist Action Buttons -->
-  <div style="margin-top: 25px; display: flex; flex-wrap: wrap; justify-content: center; gap: 15px;">
-    <!-- Course Button 1 -->
-    <a href="https://youtube.com/playlist?list=PLyqSpQzTE6M9KuQnanecDqCiJUCnCgSQf&si=2za0Klbqep9Qxrkx" target="_blank" class="course-btn">
-      <i class="fa fa-youtube-play" style="margin-right: 8px; color: #ff0000;"></i> Optical Engineering &raquo;
-    </a>
-  </div>
-</div>
+ 
 
 <!-- CSS Styling for Academic Timeline & Course Buttons Layout -->
 <style>
