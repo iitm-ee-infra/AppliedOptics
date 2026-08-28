@@ -306,7 +306,7 @@ layout: single
   <!-- Added Typographical Error Reporting Block -->
   <div class="typo-section">
     <p class="typo-text">
-      <strong>Noticed a mistake?</strong> If you find any typographical errors or inconsistencies in our published books or literature, please let us know so we can update them.
+      Corrections to typos in the book: “Introduction to Ray, Wave, and Beam Optics with Applications,” IOP Publ., November 2024. (ISBN  0750354984, 978075035498)
     </p>
     <a href="https://google.com" class="typo-btn" target="_blank" rel="noopener noreferrer">Report Typo</a>
   </div>
