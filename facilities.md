@@ -122,10 +122,10 @@ layout: single
     <!-- YouTube Playlist Link -->
     <li class="resource-item">
       <div>
-        <div class="resource-info-title">Video Lecture Series</div>
+        <div class="resource-info-title">Optical Engineering</div>
         <div class="resource-info-meta">YouTube Playlist</div>
       </div>
-      <a href="https://www.youtube.com/playlist?list=YOUR_PLAYLIST_ID" class="resource-btn" target="_blank" rel="noopener noreferrer">Watch Playlist</a>
+      <a href="https://youtube.com/playlist?list=PLyqSpQzTE6M9KuQnanecDqCiJUCnCgSQf&si=VSqKrCppMJXX4IwX" class="resource-btn" target="_blank" rel="noopener noreferrer">Watch Playlist</a>
     </li>
 
     <!-- CNNP Reference Link -->
