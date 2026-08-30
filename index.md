@@ -274,7 +274,7 @@ feature_row:
       <!-- Focus Card 1 -->
       <div class="focus-card">
         <div class="focus-img-container">
-          <img src="{{ '/assets/img/oct_focus.jpg' | relative_url }}" alt="OCT Research" class="focus-img">
+          <img src="{{ '/assets/img/OCT_Images.png' | relative_url }}" alt="OCT Research" class="focus-img">
         </div>
         <div class="focus-body">
           <h3 class="focus-title">Optical Coherence Tomography</h3>
@@ -285,7 +285,7 @@ feature_row:
       <!-- Focus Card 2 -->
       <div class="focus-card">
         <div class="focus-img-container">
-          <img src="{{ '/assets/img/diffractive_focus.jpg' | relative_url }}" alt="Diffractive Optics" class="focus-img">
+          <img src="{{ '/assets/img/Design_Sidelobe Suppressed BesselBeamElement.png' | relative_url }}" alt="Diffractive Optics" class="focus-img">
         </div>
         <div class="focus-body">
           <h3 class="focus-title">Diffractive Optics</h3>
@@ -296,7 +296,7 @@ feature_row:
       <!-- Focus Card 3 -->
       <div class="focus-card">
         <div class="focus-img-container">
-          <img src="{{ '/assets/img/metaoptics_focus.jpg' | relative_url }}" alt="Metaoptics" class="focus-img">
+          <img src="{{ '/assets/img/Optical_Metasurfaces.png' | relative_url }}" alt="Metaoptics" class="focus-img">
         </div>
         <div class="focus-body">
           <h3 class="focus-title">Metaoptics</h3>
