@@ -68,7 +68,7 @@ feature_row:
 
           <!-- Slide 2 -->
           <div class="lab-slide fade-anim" style="display: none;">
-            <img src="{{ '/assets/img/header-background/home_1.png' | relative_url }}" alt="Applied Optics Lab Showcase 2" style="width: 100%; height: 450px; object-fit: cover;">
+            <img src="{{ '/assets/img/header-background/AiryBeam.png' | relative_url }}" alt="Applied Optics Lab Showcase 2" style="width: 100%; height: 450px; object-fit: cover;">
           </div>
 
           <!-- Slide 3 -->
