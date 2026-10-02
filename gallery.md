@@ -5,7 +5,7 @@ title: "Lab Gallery"
 # Place your image files in your site's asset folder (e.g., assets/images/gallery/)
 # You can easily edit titles, categories, and captions below:
 gallery_images:
-  - url: "/assets/images/gallery/optics-lab-1.jpg"
+  - url: "/assets/img/group.png"
     title: "Optical Bench Setup"
     category: "equipment"
     caption: "High-precision laser alignment system in action at the Applied Optics Laboratory."
