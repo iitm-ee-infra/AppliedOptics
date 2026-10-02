@@ -6,9 +6,18 @@ title: "Lab Gallery"
 # You can easily edit titles, categories, and captions below:
 gallery_images:
   - url: "/assets/img/group.png"
-    title: "Optical Bench Setup"
+    title: "Convocation 2026"
     category: "team"
     caption: "Convocation 2026"
+
+     - url: "/assets/img/FOP_26.jpg"
+    title: "FRONTIERS IN OPTICS AND PHOTONICS (FOP) 2026"
+    category: "team"
+    caption: "
+FRONTIERS IN OPTICS AND PHOTONICS (FOP) 2026
+September 25 - 28, 2026
+JOINTLY ORGANIZED BY INDIAN INSTITUTE OF TECHNOLOGY DELHI (IITD) AND CSIR-NATIONAL PHYSICAL LABORATORY (CSIR-NPL)
+"
 
 
 ---
