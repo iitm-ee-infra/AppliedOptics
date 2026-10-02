@@ -10,30 +10,7 @@ gallery_images:
     category: "equipment"
     caption: "High-precision laser alignment system in action at the Applied Optics Laboratory."
 
-  - url: "/assets/images/gallery/optics-lab-2.jpg"
-    title: "Quantitative Phase Imaging"
-    category: "research"
-    caption: "3D holographic phase imaging setup developed for bio-optical measurement."
 
-  - url: "/assets/images/gallery/optics-lab-3.jpg"
-    title: "Research Team Discussion"
-    category: "team"
-    caption: "Weekly lab meeting and experimental progress updates with researchers."
-
-  - url: "/assets/images/gallery/optics-lab-4.jpg"
-    title: "Microscope Objective Calibration"
-    category: "equipment"
-    caption: "Custom resolution test target under high-magnification optical inspection."
-
-  - url: "/assets/images/gallery/optics-lab-5.jpg"
-    title: "International Photonics Conference"
-    category: "team"
-    caption: "Applied Optics Group presenting experimental findings at the annual symposium."
-
-  - url: "/assets/images/gallery/optics-lab-6.jpg"
-    title: "Laser Interferometry Experiment"
-    category: "research"
-    caption: "Real-time interference pattern analysis during optical phase mapping."
 ---
 
 <div class="gallery-page-container">
