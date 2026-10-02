@@ -111,9 +111,9 @@ title: "Key Research Areas"
         </p>
         <ul class="focus-list">
           <li class="focus-item"><i class="fa fa-circle"></i> SD-OCT Signal Processing</li>
-          <li class="focus-item"><i class="fa fa-circle"></i> Wigner-Ville Distribution</li>
+         
           <li class="focus-item"><i class="fa fa-circle"></i> Agricultural Sub-peel Imaging</li>
-          <li class="focus-item"><i class="fa fa-circle"></i> High-Resolution A-Scans</li>
+         
         </ul>
       </div>
     </div>
