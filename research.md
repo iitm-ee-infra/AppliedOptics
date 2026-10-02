@@ -107,7 +107,7 @@ title: "Key Research Areas"
       <div class="topic-content">
         <h2 class="topic-title">Optical Coherence Tomography (OCT)</h2>
         <p class="topic-text">
-          Our group focuses on signal processing optimization and microstructural imaging using Spectral Domain OCT (SD-OCT). We develop innovative methods utilizing Wigner-Ville techniques and signal distributions to enhance spatial resolution thresholds. Our applied fields span across non-destructive post-harvest agricultural testing and advanced biophotonics diagnostics.
+          Our group focuses on the design and development of fiber-based spectral-domain OCT (SD-OCT) systems at 1300 and 1500 nm for imaging applications, along with the development of novel signal-processing and computational frameworks for enhanced axial resolution. In addition, we are exploring OCT for applications in agriculture and food safety. Our work includes OCT imaging of rice leaves for depth-resolved investigation of microstructural changes associated with disease progression, and fruit tissue imaging for visualization and characterization of microstructural changes associated with disease and post-harvest processes. We are also investigating OCT-based tissue and speckle analysis for fruit ripening assessment, including the identification of ripening rate and differentiation between naturally and artificially ripened fruits. These studies aim to establish OCT as a non-destructive and quantitative tool for plant and fruit health monitoring.
         </p>
         <ul class="focus-list">
           <li class="focus-item"><i class="fa fa-circle"></i> SD-OCT Signal Processing</li>
