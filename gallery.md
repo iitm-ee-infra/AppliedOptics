@@ -7,8 +7,8 @@ title: "Lab Gallery"
 gallery_images:
   - url: "/assets/img/group.png"
     title: "Optical Bench Setup"
-    category: "equipment"
-    caption: "High-precision laser alignment system in action at the Applied Optics Laboratory."
+    category: "team"
+    caption: "Convocation 2026"
 
 
 ---
@@ -25,9 +25,7 @@ gallery_images:
     <h1 class="maintenance-title">Applied Optics Group Gallery</h1>
     <div class="accent-bar"></div>
 
-    <p class="maintenance-message">
-      Explore our visual archive of ongoing research projects, optics laboratory infrastructure, and team events.
-    </p>
+   
 
     <!-- Category Filter Bar -->
     <div class="filter-wrapper">
@@ -41,7 +39,7 @@ gallery_images:
         <i class="fa fa-cogs"></i> Equipment
       </button>
       <button class="filter-btn" data-filter="team">
-        <i class="fa fa-users"></i> Lab Life & Events
+        <i class="fa fa-users"></i> Group Photos
       </button>
     </div>
   </div>
