@@ -97,17 +97,13 @@ title: "Lab Gallery"
       
       <!-- Main Title -->
       <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1a365d] tracking-tight">
-        Visual Archives & Lab Gallery
+        Gallery
       </h1>
 
       <!-- Divider Bar -->
       <div class="accent-bar mx-auto my-4"></div>
 
-      <!-- Subtitle Description -->
-      <p class="text-slate-600 text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
-        High-resolution visual record of experimental setups, research milestones, optics facilities, and academic events at the <strong>Applied Optics Group</strong>, IIT Madras.
-      </p>
-
+     
       <!-- Quick Metrics & Navigation Bar -->
       <div class="mt-8 flex flex-wrap items-center justify-center gap-3 text-xs md:text-sm font-medium text-slate-600">
         <span class="bg-[#f8fafc] border border-[#e2e8f0] px-4 py-1.5 rounded-full flex items-center gap-2 shadow-sm">
@@ -135,9 +131,7 @@ title: "Lab Gallery"
         <button onclick="filterCategory('All')" class="filter-tab active px-4 py-2 rounded-xl text-xs sm:text-sm font-bold border border-slate-300 text-slate-700 hover:bg-slate-100">
           All Archives
         </button>
-        <button onclick="filterCategory('Lab & Equipment')" class="filter-tab px-4 py-2 rounded-xl text-xs sm:text-sm font-bold border border-slate-300 text-slate-700 hover:bg-slate-100">
-          Lab & Equipment
-        </button>
+       
         <button onclick="filterCategory('Research Highlights')" class="filter-tab px-4 py-2 rounded-xl text-xs sm:text-sm font-bold border border-slate-300 text-slate-700 hover:bg-slate-100">
           Research Highlights
         </button>
